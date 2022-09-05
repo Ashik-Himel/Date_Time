@@ -4,15 +4,21 @@
     margin: 0;
     box-sizing: border-box;
 }
+html {
+    font-size: 16px;
+}
 body {
     font-family: 'Poppins', sans-serif;
     background-image: url('https://media1.giphy.com/media/eiMzTkBCN4lGg/giphy.gif') ,linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url('bg-image.jpg');
     backdrop-filter: blur(5px);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 .root {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,4 +51,9 @@ body {
 }
 .date > * {
     padding: 0 0.15rem;
+}
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 12px;
+    }
 }
